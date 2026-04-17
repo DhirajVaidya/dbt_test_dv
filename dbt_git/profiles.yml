@@ -1,0 +1,10 @@
+dbt_git:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: FR_TDB_DATAENGINEER_DEV
+      warehouse: COMPUTE_WH
+      database: DBT_HOME
+      schema: TDS
+      threads: 8
